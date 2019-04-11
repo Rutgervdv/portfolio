@@ -1,0 +1,371 @@
+body, html {
+  padding: 0;
+  margin: 0;
+}
+
+/* GENERAL STYLING: NOT NECESSARY */
+
+
+/* END OF GENERAL STYLING */
+/* START OF USEFUL CODE */
+.hamburger {
+  display: block;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  cursor: pointer;
+  z-index: 2;
+  background-color: #552586;
+  width: 100%;
+}
+.hamburger span, .hamburger:before, .hamburger:after {
+  content: " ";
+  width: 30px;
+  height: 1px;
+  background-color: #000;
+  transform: rotate(0);
+  position: absolute;
+  left: 10px;
+  transition: all 300ms ease-in-out;
+}
+.hamburger:before {
+  top: 16px;
+}
+.hamburger span {
+  top: 25px;
+  opacity: 1;
+}
+.hamburger:after {
+  bottom: 15px;
+}
+.hamburger.active span {
+  opacity: 0;
+  top: 25px;
+  transform: rotate(90deg);
+}
+.hamburger.active:before {
+  width: 34px;
+  top: 25px;
+  left: 8px;
+  transform: rotate(45deg);
+}
+.hamburger.active:after {
+  width: 34px;
+  bottom: 24px;
+  left: 8px;
+  transform: rotate(-45deg);
+}
+
+
+.main-nav__list {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+  .main-nav__list {
+    overflow: hidden;
+    background-color: ;
+    background-image:url("../img/background2.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: 0;
+    height: 100vh;
+    z-index: 1;
+    transition: all 0.3s ease;
+  }
+  .main-nav__list.open {
+    width: 100%;
+  }
+
+  .main-nav__item {
+    margin:10px 10px;
+    background: #552586;
+    border-radius: 50px;
+    padding: 3vh 90px;
+    text-align: center;
+    width: 7vw;
+    transition: .3s ease;
+    box-shadow: 0 15px 60px -5px rgba(0, 0, 0, .7);
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 30px;
+  }
+ /*einde navigatie*/
+
+
+#home {
+  height: 90vh;
+  width: 100%;
+  position: relative;
+  background-image:url("../img/background2.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+ #home_h1 {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  border: solid 1px red;
+  width: 85vw;
+  margin-left: 5vw;
+  padding-top: 4vw;
+ }
+
+ #home_h1 h1{
+  font-family: 'Roboto', sans-serif;
+  font-size: 4em;
+  color: white;
+ }
+
+#home p {
+  margin-top: 3vw;
+  font-size: 16px;
+  color: white;
+  margin-right: 15vw;
+}
+
+#foto_vlak_rechts {
+  border: solid white;
+  width: 20vw;
+  height: 20vw;
+}
+
+/*over mij page*/
+
+#over_mij {
+  position: relative;
+  height: 120vh;
+  width: 100%;
+  background-image:url("../img/background3.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#over_mij_h1 {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  border: solid 1px red;
+  width: 85vw;
+  margin-left: 5vw;
+  padding-top: 22vw;
+}
+
+ #over_mij_h1 h1{
+  font-family: 'Roboto', sans-serif;
+  font-size: 4em;
+  color: white;
+ }
+
+#over_mij p {
+  margin-top: 3vw;
+  font-size: 16px;
+  color: white;
+  margin-right: 15vw;
+}
+
+#foto_vlak_rechts {
+  border: solid white;
+  width: 20vw;
+  height: 20vw;
+}
+
+
+/*begin buttun css*/
+.container {
+  margin-top: 2vw;
+}
+.button {
+  color: #fff;
+  font-weight: normal;
+  font-size: 22px;
+  background: #552586;
+  border-radius: 50px;
+  padding: 30px 90px;
+  border: none;
+  transition: .3s ease;
+  box-shadow: 0 15px 60px -5px rgba(0, 0, 0, .7);
+}
+
+.button:hover {
+  box-shadow: none;
+  cursor: pointer;
+  background-image: linear-gradient(#552586, #804FB3);  
+  box-shadow: 0 15px 60px -5px rgba(0, 0, 0, .9);
+  
+}
+
+.button:hover + .drip-1{
+  height: 50px;
+  box-shadow:  rgba(165, 55, 253, 1);
+  background-image: linear-gradient(#804FB3, #B589D6); 
+}
+
+.button:hover ~ .drip-2{
+  height: 90px;
+  background-image: linear-gradient(#552586, #B589D6); 
+}
+
+.button:hover ~ .drip-3{
+  height: 30px;
+  background-image: linear-gradient(#552586, #B589D6); 
+}
+
+.button:hover ~ .drip-4{
+  height: 50px;
+  box-shadow:  rgba(165, 55, 253, 1);
+  background-image: linear-gradient(#804FB3, #B589D6); 
+}
+
+.button:hover ~ .drip-5{
+  height: 75px;
+  box-shadow:  rgba(165, 55, 253, 1);
+  background-image: linear-gradient(#804FB3, #B589D6); 
+}
+
+.button:hover ~ .drip-6{
+  height: 65px;
+  background-image: linear-gradient(#552586, #B589D6); 
+}
+
+
+.drip-1{
+  position:absolute;
+  width:19px;
+  height:0px;
+  border-radius:0 0 21px 21px;
+  background:#efd5e7;
+  margin: 0px 158px;
+  transition: height 1s ease;
+}
+
+
+.drip-2{
+  position:absolute;
+  width:19px;
+  height:0px;
+  border-radius:0 0 21px 21px;
+  background:#efd5e7;
+  margin: 0px 140px;
+  transition: height 2s ease;
+}
+
+.drip-3{
+  position:absolute;
+  width:15px;
+  height:0px;
+  border-radius:0 0 21px 21px;
+  background:#efd5e7;
+  margin: 0px 60px;
+  transition: height .7s ease;
+}
+
+.drip-4{
+  position:absolute;
+  width:19px;
+  height:0px;
+  border-radius:0 0 21px 21px;
+  background:#efd5e7;
+  margin: 0px 40px;
+  transition: height 1.5s ease;
+}
+
+.drip-5{
+  position:absolute;
+  width:18px;
+  height:0px;
+  border-radius:0 0 21px 21px;
+  background:#efd5e7;
+  margin: 0px 100px;
+  transition: height 1.2s ease;
+} 
+
+.drip-6{
+  position:absolute;
+  width:15px;
+  height:0px;
+  border-radius:0 0 21px 21px;
+  background:#efd5e7;
+  margin: 0px 190px;
+  transition: height 1.5s ease;
+}
+/*einde button */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 300px)AND (max-width: 520px) {
+  #home {
+  height: 50vh;
+  width: 200%;
+  position: relative;
+  background-image:url("../img/background2.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#home_h1 {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  border: solid 1px red;
+  width: 95vw;
+  margin-left: 2vw;
+  padding-top: 4vw;
+ }
+
+#home_h1 h1{
+  font-size: 2em;
+ }
+
+ #home p {
+  margin-right: 0vw;
+}
+
+#foto_vlak_rechts {
+  display: none;
+}
+
+.container {
+  display: none;
+}
+
+/*over mij page*/
+  #over_mij {
+  position: relative;
+  height: 50vh;
+  width: 200%;
+  background-image:url("../img/background3.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#over_mij_h1 {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  border: solid 1px red;
+  width: 95vw;
+  margin-left: 2vw;
+  padding-top: 22vw;
+}
+
+#over_mij_h1 h1{
+  font-size: 2em;
+ }
+} 
+
+@media only screen and (min-width: 521px)AND (max-width: 880px) {
+  body {
+    background-color: blue;
+  }
+}
