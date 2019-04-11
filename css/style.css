@@ -159,7 +159,7 @@ body, html {
   border: solid 1px red;
   width: 85vw;
   margin-left: 5vw;
-  padding-top: 22vw;
+  padding-top: 15vw;
 }
 
  #over_mij_h1 h1{
@@ -181,6 +181,161 @@ body, html {
   height: 20vw;
 }
 
+/*skills page*/
+/*ook de code voor projecten*/
+#skills_projecten {
+  position: relative;
+  height: 75vh;
+  width: 100%;
+}
+
+/*hele section*/
+#skills_projecten_h1 {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  border: solid 1px red;
+  width: 85vw;
+  margin-left: 5vw;
+  padding-top: 10vw;
+}
+
+ #skills_projecten_h1 h1{
+  font-family: 'Roboto', sans-serif;
+  font-size: 4em;
+  color: black;
+ }
+
+#skills_projecten p {
+  margin-top: 3vw;
+  font-size: 16px;
+  color: black;
+  margin-right: 15vw;
+}
+
+#foto_vlak_rechts {
+  border: solid red;
+  width: 20vw;
+  height: 20vw;
+}
+
+/*projecten page*/
+/*ook de code voor projecten 1tm5*/
+#projecten {
+  position: relative;
+  height: 120vh;
+  width: 100%;
+  background-image:url("../img/background3.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#projecten_h1 {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  border: solid 1px red;
+  width: 85vw;
+  margin-left: 5vw;
+  padding-top: 20vw;
+}
+
+ #projecten_h1 h1{
+  font-family: 'Roboto', sans-serif;
+  font-size: 4em;
+  color: white;
+ }
+
+#projecten p {
+  margin-top: 3vw;
+  font-size: 16px;
+  color: white;
+  margin-right: 15vw;
+}
+
+#foto_vlak_rechts {
+  border: solid white;
+  width: 20vw;
+  height: 20vw;
+}
+
+/*contact page*/
+#contact {
+  position: relative;
+  height: 120vh;
+  width: 100%;
+  background-image:url("../img/background2_contact.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin-top: vw;
+}
+
+#contact_h1 {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  border: solid 1px red;
+  width: 95vw;
+  margin-left: 2vw;
+  padding-top: 17vw;
+}
+
+ #contact_h1 h1{
+  font-family: 'Roboto', sans-serif;
+  font-size: 4em;
+  color: white;
+ }
+
+#contact p {
+  margin-top: 3vw;
+  font-size: 16px;
+  color: white;
+  margin-right: 15vw;
+}
+
+#foto_vlak_rechts_contact {
+  border: solid white;
+  width: 30vw;
+  height: 25vw;
+  margin-top: 10vw;
+}
+
+.grid-container {
+  border: solid red;
+  display: grid;
+  color: white;
+  margin-top: 10vw; 
+  align-items: center;
+  column-gap: 5vw;
+  font-size: 35px; 
+  grid-template-columns: 0.6fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "logo1 tekst1" "logo2 tekst2" "logo3 tekst3";
+}
+
+.grid-container img {
+  width:  5vw;
+}
+
+.logo1 { 
+  grid-area: logo1;
+ }
+
+.logo2 { 
+  grid-area: logo2;
+ }
+
+.logo3 { 
+  grid-area: logo3; }
+
+.tekst1 { 
+  grid-area: tekst1;}
+
+.tekst2 { 
+  grid-area: tekst2;}
+
+.tekst3 { 
+  grid-area: tekst3;}
 
 /*begin buttun css*/
 .container {
@@ -305,10 +460,10 @@ body, html {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 300px)AND (max-width: 520px) {
   #home {
-  height: 50vh;
-  width: 200%;
+  height: 60vh;
+  
   position: relative;
-  background-image:url("../img/background2.png");
+  background-image:url("../img/background2_2.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
@@ -342,9 +497,8 @@ body, html {
 /*over mij page*/
   #over_mij {
   position: relative;
-  height: 50vh;
-  width: 200%;
-  background-image:url("../img/background3.png");
+  height: 60vh;
+  background-image:url("../img/background3_2.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
@@ -362,7 +516,65 @@ body, html {
 #over_mij_h1 h1{
   font-size: 2em;
  }
+#skills_projecten {
+  height: 45vh;
+}
+
+#projecten_h1 h1 {
+  font-size: 2.3em;
+  margin-top: 4vw;  
+}
+
+#skills_projecten_h1 h1 {
+  font-size: 2.3em
+}
+ #projecten {
+  position: relative;
+  height: 60vh;
+  background-image:url("../img/background3_2.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+ #contact {
+  position: relative;
+  height: 60vh;
+  background-image:url("../img/background2_contact_2.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin-top: vw;
+}
+
+.grid-container {
+  border: solid red;
+  display: grid;
+  color: white;
+  align-items: center;
+  column-gap: 5vw;
+  font-size: 25px; 
+  grid-template-columns: 0.6fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "logo1 tekst1" "logo2 tekst2" "logo3 tekst3";
+}
+
+#contact_h1 h1 {
+  text-align: center;
+  margin-top: 10  vw;
+}
+.grid-container img {
+  width:  10vw;
+}
+
+#foto_vlak_rechts_contact {
+  display: none;
+
+
+
 } 
+
+
+  
+
 
 @media only screen and (min-width: 521px)AND (max-width: 880px) {
   body {
