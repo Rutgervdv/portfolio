@@ -1,0 +1,505 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+.hamburger {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  position: absolute;
+  cursor: pointer;
+  z-index: 100;
+}
+.hamburger span, .hamburger:before, .hamburger:after {
+  content: " ";
+  display: block;
+  width: 30px;
+  height: 1px;
+  background-color: #000;
+  transform: rotate(0);
+  position: absolute;
+  left: 10px;
+  transition: all 500ms ease-in-out;
+}
+.hamburger:before {
+  top: 16px;
+}
+.hamburger span {
+  top: 25px;
+  opacity: 1;
+}
+.hamburger:after {
+  bottom: 15px;
+}
+.hamburger.active span {
+  opacity: 0;
+  top: 25px;
+  transform: rotate(90deg);
+}
+.hamburger.active:before {
+  width: 34px;
+  top: 25px;
+  left: 8px;
+  transform: rotate(45deg);
+}
+.hamburger.active:after {
+  width: 34px;
+  bottom: 24px;
+  left: 8px;
+  transform: rotate(-45deg);
+}
+
+.hamburger {
+  display: block;
+  width: 100%;
+  background-color: #7a7a7a;
+}
+
+.main-nav__list {
+  overflow: hidden;
+  background-color: #7a7a7a;
+  position: absolute;
+  top: 0;
+  flex-flow: column;
+  align-items: center;
+  width: 0;
+  height: 100vh;
+  transition: all 0.8s ease;
+  z-index: 2;
+}
+
+.main-nav__list.open {
+  width: 100%;
+}
+
+.main-nav__item {
+  text-align: center;
+  font-size: 4em;
+  margin: 10vw;
+ }
+
+#home_page {
+  height:auto;
+  display: flex;
+  flex-direction: row;
+}
+ 
+ a {
+  text-decoration: none;
+  color: black;
+ }
+
+/*homepage rechtervlak*/
+#Homepage_RechterVlak {
+  background-color: #e8e7e2;
+  width: 45%;
+  height: 100vh;
+  position: relative;
+}
+
+#oats_image_homepage {
+  width: 22vw;
+  margin-top: 10vh;
+  opacity: 0.7;
+  position: absolute;
+  right: 0;
+}
+
+#mixer2_image_homepage {
+ display: none;
+}
+
+#mixer_image_homepage {
+  position:absolute;
+  bottom: 5vw;
+  width: 100%;
+  opacity: 0.9;
+}
+  /*einde homepage rechte vlak*/
+
+  /*home page linkervlak*/
+#Homepage_LinkerVlak {
+    background-color: #f9f6f5;
+    width: 55%;
+    height: auto;
+ }
+
+ #Homepage_LinkerVlak p{
+  font-family: 'Montserrat';
+  margin-top: 9vw;
+  margin-right: 25vw;
+  font-size: 15px;
+  margin-left: 2vw;
+ }
+
+ #Homepage_LinkerVlak h1 {
+  font-family: 'Montserrat';
+  font-size: 2.5em;
+  margin-top: 10vw;
+  margin-left: 2vw;
+ } 
+
+ #leaf_image_homepage {
+  position:absolute;
+  bottom:0vw;
+  width: 20vw;
+  margin-left: 37vw;
+  opacity: 0.9;
+  z-index: 1
+ }
+
+ /*begin second page*/
+
+/*assortimenten page*/
+ #Assortiment_page {
+  height:100vh;
+  display: flex;
+  flex-direction: row;
+ }
+ /*einde*/
+
+/*assortiment linkervlak*/
+ #Assortimenten_linkerVlak {
+  background-color: #e8e7e2;
+  height: auto;
+  width: 55%;
+ }
+
+ #Assortimenten_linkerVlak h1 {
+  font-family: Montserrat;
+  font-size: 2em;
+  margin-left: 1.5em;
+  margin-top: 3%;
+ }
+
+#Assortimenten_list li {
+  font-family: Montserrat;
+  font-size: 20px;
+  margin: 3vw;
+  margin-top: 7%;
+}
+
+ /*assortiment linkervlak einde*/
+
+/*rechtervlak*/
+ #Assortimenten_rechterVlak {
+  background-color: #f9f6f5;
+  width: 45%;
+  height: auto;
+  position: relative;
+}
+
+#_page_logo {
+  width: 100%;
+  margin-top: 1vw;
+}
+
+#_photo_vlak {
+  width: 70%;
+  height: 65%;
+  border:solid 2px;
+  margin-top: 5%;
+  margin-left: 15%;
+}
+/*einde rechtervlak*/
+
+/*contact pagina*/
+#Contact_Pagina {
+  height: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+/*begin contact linkervlak*/
+ #Contact_pagina_LinkerVlak {
+  background-color: #f9f6f5;
+  height: 100vh;
+  width: 55%;
+ }
+
+ #ContactPagina_lijst1 li{
+  font-family: Montserrat;
+  font-size: 30px;
+  margin: 2.5em 0 1.5em 1em ;
+  padding-bottom: 0.5em;
+ }
+
+ .ContactPagina_lijst2 li{
+  font-family: Montserrat;
+  font-size: 30px;
+  margin-right: 12vw;
+ }
+
+
+/*begin contact RechterVlak*/
+ #Contact_pagina_RechterVlak {
+  background-color: #e8e7e2;
+  width: 45%;
+  height: auto;
+  position: relative;
+}
+
+#contactContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
+
+
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 686px) {
+  body {
+  padding: 0;
+  margin: 0;
+}
+.hamburger {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  position: absolute;
+  cursor: pointer;
+  z-index: 100;
+}
+.hamburger span, .hamburger:before, .hamburger:after {
+  content: " ";
+  display: block;
+  width: 25px;
+  height: 1px;
+  background-color: #000;
+  transform: rotate(0);
+  position: absolute;
+  left: 10px;
+  transition: all 500ms ease-in-out;
+}
+.hamburger:before {
+  top: 20px;
+}
+
+.hamburger span {
+  top: 25px;
+  opacity: 1;
+}
+.hamburger:after {
+  bottom: 15px;
+}
+.hamburger.active span {
+  opacity: 0;
+  top: 25px;
+  transform: rotate(90deg);
+}
+.hamburger.active:before {
+  width: 34px;
+  top: 25px;
+  left: 8px;
+  transform: rotate(45deg);
+}
+.hamburger.active:after {
+  width: 34px;
+  bottom: 24px;
+  left: 8px;
+  transform: rotate(-45deg);
+}
+
+.hamburger {
+  display: block;
+  width: 100%;
+  height: 30px;
+  background-color: #7a7a7a;
+}
+
+.main-nav__list {
+  overflow: hidden;
+  background-color: #7a7a7a;
+  position: absolute;
+  top: 0;
+  flex-flow: column;
+  align-items: center;
+  width: 0;
+  height: 100vh;
+  transition: all 0.8s ease;
+  z-index: 2;
+}
+
+.main-nav__list.open {
+  width: 100%;
+}
+
+.main-nav__item {
+  text-align: center;
+  font-size: 4em;
+  margin: 10vw;
+ }
+
+#home_page {
+  display: flex;
+  flex-direction: column;
+}
+ 
+ a {
+  text-decoration: none;
+  color: black;
+ }
+
+/*homepage rechtervlak*/
+#Homepage_RechterVlak {
+  display: none;
+}
+
+#oats_image_homepage {
+  display: none;
+}
+
+  /*einde homepage rechte vlak*/
+
+  /*home page linkervlak*/
+#Homepage_LinkerVlak {
+    background-color: #f9f6f5;
+    width: 100%;
+    height: 100vh;
+ }
+
+ #Homepage_LinkerVlak p{
+  font-family: 'Montserrat';
+  margin-top: 12vw;
+  margin-right: 5vw;
+  margin-left: 5vw;
+  font-size: 13px;
+  text-align: center;
+ }
+
+ #mixer2_image_homepage {
+  display: block;
+  width: 100%;
+  margin-top: 12%;  
+ }
+
+ #Homepage_LinkerVlak h1 {
+  font-family: 'Montserrat';
+  font-size: 2em;
+  margin-top: 30vw;
+  text-align: center;
+ } 
+
+
+ #leaf_image_homepage {
+  display: none;
+ }
+
+ /*begin second page*/
+
+/*assortimenten page*/
+ #Assortiment_page {
+  height:100vh;
+  display: flex;
+  flex-direction: row;
+ }
+ /*einde*/
+
+/*assortiment linkervlak*/
+ #Assortimenten_linkerVlak {
+  background-color: #e8e7e2;
+  height: 100vh;
+  width: 100%;
+ }
+
+#Assortimenten_list li {
+  font-family: Montserrat;
+  font-size: 1.5em;
+  margin: 3vw;
+  margin-top: 7%;
+}
+
+#Assortimenten_list {
+  margin-top: 30%;
+  text-align: center;
+}
+
+#Assortimenten_linkerVlak h1{
+  margin-top: 10%;
+  text-align: center;
+}
+ /*assortiment linkervlak einde*/
+
+/*rechtervlak*/
+ #Assortimenten_rechterVlak {
+  display: none;
+}
+
+#_page_logo {
+  width: 100%;
+  margin-top: 1vw;
+}
+
+#_photo_vlak {
+  width: 70%;
+  height: 65%;
+  border:solid 2px;
+  margin-top: 5%;
+  margin-left: 15%;
+}
+/*einde rechtervlak*/
+
+/*contact pagina*/
+#Contact_Pagina {
+  height:100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/*begin contact linkervlak*/
+ #Contact_pagina_LinkerVlak {
+  background-color: #f9f6f5;
+  min-height: 100vh;
+  width: 100%;
+ }
+
+  #Assortimenten_linkerVlak h1 {
+  font-family: Montserrat;
+  font-size: 2em;
+  margin-left: 0em;
+  margin-top: 3%;
+ }
+
+ #ContactPagina_lijst1 li{
+  font-family: Montserrat;
+  font-size: 1.5em;
+  margin: 2.5em 0 1.5em 0em ;
+  padding-bottom: 0.5em;
+  text-align: center;
+ }
+
+ .ContactPagina_lijst2 li{
+  font-family: Montserrat;
+  font-size: 1.5em;
+  margin-left: 1em;
+  margin-right: 1.5em;
+ }
+
+
+/*begin contact RechterVlak*/
+ #Contact_pagina_RechterVlak {
+  background-color: #e8e7e2;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+
+
+#contactContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#_photo_vlak {
+  margin-top:20%;
+}
+
+}
+   

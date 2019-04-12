@@ -1,0 +1,436 @@
+@media only screen and (max-width: 600px) {
+  .header li {
+    float: left;
+  }
+
+ 
+body, h1 {
+  margin: 0;
+  padding: 0;
+}
+
+
+.logo img {
+  display: none;
+}
+
+a {
+  color: #000;
+}
+
+/* header */
+
+
+
+#_bobs {
+  text-align: center;
+  width: 100vw;
+}
+
+#_Range img {
+  width: 100%;
+  display: block;
+
+  
+}
+
+
+  .header {
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  opacity: 0.9;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.header li a {
+  display: block;
+  padding: 0px 20px;
+  border-right: 1px solid #f4f4f4;
+  text-decoration: none;
+  color: black;
+  margin-top: 2vw;
+
+
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #f4f4f4;
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  text-decoration: none;
+}
+
+.logo {
+   margin-top: -3%;
+   margin-left: -3%;
+   text-decoration: none;
+   margin-bottom: -3%;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  margin-top: -3%;
+  transition: max-height .2s ease-out;
+  font-size: 20px;
+  margin-top: 3vh;
+
+}
+
+
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+
+
+#mainDiv {
+
+  background-color: #ebebeb;
+  
+}
+
+button:hover {
+  background: url("https://www.yoogiscloset.com/media/wysiwyg/1Togo.jpg")
+}
+
+#mainDiv h1  {
+  font-family: 'Source Sans Pro', sans-serif;
+  padding-top: 3%;
+  font-weight: 1;
+  text-align: center;
+  color: black;
+}
+
+#mainDiv p {
+  padding: 3% 10%;
+  font-size: 20px;
+}
+
+#mainDiv button {
+  margin-left: 25vw;
+  width: 50%;
+  border: solid 3px;  
+}
+
+#_cars img {
+  width: 100%;
+}
+
+
+#_prijs  img{
+  width: 20%;
+  margin-top: 10%;
+  margin-left: 10vw;
+  padding-bottom: 7%;
+}
+
+#_footer  {
+  background-color: #35353c;
+
+  
+}
+
+#_footer h1  {
+  padding-top: 10%;
+  padding-bottom: 3%; 
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 1;
+  text-align: center;
+}
+
+#_footer p {
+  margin:0 15%;
+  font-size: 15px;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 1;
+  text-align: center;
+}
+
+#_list1   li {
+ display: inline-block;
+  padding-left: 5%;
+  
+  list-style-type: none;
+  color: white;
+}
+
+ul li a{
+  color: white;
+}
+
+a:link{
+  text-decoration: none!important;
+}
+
+#_list2 ul li {
+  display: inline-block;
+  list-style-type: none;
+  padding-left:  2vw;
+  padding-right: 2vw;
+  padding-right:  5%;
+  margin-bottom: 5%;
+
+}
+
+
+.header .menu {
+  clear: none;
+  float: right;
+  max-height: none;
+  }
+
+  
+  }
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .header li {
+    float: left;
+  }
+
+ 
+body, h1 {
+  margin: 0;
+  padding: 0;
+}
+
+
+.logo img {
+  height: 25vh; 
+  width: auto;
+}
+
+a {
+  color: #000;
+}
+
+/* header */
+
+.menu {
+
+}
+
+#_bobs {
+  margin-top: 4vh;
+  margin-left: 17vw;
+  text-align: center;
+}
+
+#_Range img {
+  width: 80%;
+  padding-left: 10%;
+  margin-bottom: 0%;
+  display: block;
+  padding-bottom: 0%;
+}
+
+
+  .header {
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  opacity: 0.9;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  border-right: 1px solid #f4f4f4;
+  text-decoration: none;
+  color: black;
+  margin-top: 2vw;
+
+
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #f4f4f4;
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  text-decoration: none;
+}
+
+.logo {
+   margin-top: -3%;
+   margin-left: -3%;
+   text-decoration: none;
+   margin-bottom: -3%;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  margin-top: -3%;
+  transition: max-height .2s ease-out;
+  font-size: 20px;
+  margin-top: 3vh;
+
+}
+
+
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+
+
+#mainDiv {
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: #ebebeb;
+  
+}
+
+button:hover {
+  background: url("https://www.yoogiscloset.com/media/wysiwyg/1Togo.jpg")
+}
+
+#mainDiv h1  {
+  font-family: 'Source Sans Pro', sans-serif;
+  padding-top: 3%;
+  font-weight: 1;
+  text-align: center;
+  color: black;
+}
+
+#mainDiv p {
+  padding: 3% 10%;
+  font-size: 20px;
+}
+
+#mainDiv button {
+  margin-left: 10%;
+  width: 20%;
+  border: solid 5px;  
+}
+
+#_cars img {
+  width: 100%;
+}
+
+
+#_prijs  img{
+  width: 6%;
+  margin-top: 5%;
+  margin-left: 20%;
+  padding-bottom: 7%;
+}
+
+#_footer  {
+  background-color: #35353c;
+  width: 80%;
+  margin-left: 10%; 
+}
+
+#_footer h1  {
+  padding-top: 10%;
+  padding-bottom: 3%; 
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 1;
+  text-align: center;
+}
+
+#_footer p {
+  margin:0 15%;
+  font-size: 15px;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 1;
+  text-align: center;
+}
+
+#_list1   li {
+  width: 15%;
+  padding-left: 5%;
+  float: left;
+  list-style-type: none;
+  color: white;
+}
+
+ul li a{
+  color: white;
+}
+
+a:link{
+  text-decoration: none!important;
+}
+
+#_list2 ul li {
+  display: inline-block;
+  list-style-type: none;
+  padding-left:  2vw;
+  padding-right: 2vw;
+  padding-right:  5%;
+  margin-bottom: 5%;
+
+}
+
+
+.header .menu {
+  clear: none;
+  float: right;
+  max-height: none;
+  }
+
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
+
+
+
+
+
+
+
