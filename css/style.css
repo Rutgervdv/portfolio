@@ -82,7 +82,6 @@ body, html {
     border-radius: 50px;
     padding: 3vh 90px;
     text-align: center;
-    width: 7vw;
     transition: .3s ease;
     box-shadow: 0 15px 60px -5px rgba(0, 0, 0, .7);
   }
@@ -244,8 +243,7 @@ body, html {
 }
 
 #foto_vlak_rechts_projecten img{
-  width: 30vw;
-  margin-top: 5vw;
+  width: 25vw;
 }
 
 /*contact page*/
@@ -283,10 +281,10 @@ body, html {
 #foto_vlak_rechts_contact {
   width: 30vw;
   height: 25vw;
-  margin-top: 9vw;
+  margin-top: 8vw;
 }
 #foto_vlak_rechts_contact img {
-  width: 30vw;
+  width: 25vw;
 }
 
 #foto_vlak_rechts_mobile_projecten img{
@@ -601,9 +599,6 @@ body, html {
 
 
 @media only screen and (min-width: 521px)AND (max-width: 1200px) {
-  body {
-    background-color: red;
-  }
 
   #foto_vlak_rechts_over_mij img{
     margin-top: 10vw;
@@ -621,10 +616,13 @@ body, html {
   margin-top: 0vw; 
 }
 
+.main-nav__list {
+  background-size: 800% 200%;
+}
 
-  .container {
-    display: none;
-  }
+.container {
+  display: none;
+}
 
   #home {
   height: 50vh;
