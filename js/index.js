@@ -1,6 +1,4 @@
 
-// Adding click event to hamburger button and menu items,
-// that will open/close off-canvas menu.
 const triggers = document.querySelectorAll('.main-nav__item, .hamburger');
 
 Array.from(triggers).forEach(link => {
